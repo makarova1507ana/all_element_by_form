@@ -22,6 +22,31 @@
       Человек
     </label>
  </p>
+ 
+ <p> пример когда нет логики выбора:
+<label>Выбирете цифру 5</label>
+  <label>
+      <input type="radio" value="1">
+      1
+    </label>
+    <label>
+      <input type="radio" value="2">
+      2
+    </label>
+    <label>
+      <input type="radio" value="3">
+      3
+    </label>
+    <label>
+      <input type="radio" value="4">
+      4
+    </label>
+      <label>
+      <input type="radio" value="5">
+      5
+    </label>
+ </p>
+ 
   <p>
     <label>Имя</label>
     <input type="text" name="first_name">
@@ -52,12 +77,9 @@
   </p>
  <p>
     <label>ссылка на вашу компанию </label>
-    <input type="link" name="link_company">
+    <input type="link" name="link_company" placeholder="https://name_site.com">
   </p>
-<p>
-    <label>ссылка на вашу компанию </label>
-    <input type="link" name="link_company">
-  </p>
+
   <p>
     <label>Страна</label>
     <select name="country">
@@ -72,7 +94,7 @@
     </select>
   </p>
   <p>
-    <label>Ваши любые жанры фильмов</label>
+    <label>Ваши любые жанры фильмов</label><br>
     <select name="typemovie" multiple>
       <option>Ужасы</option>
       <option>Фантастика</option>
