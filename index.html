@@ -1,8 +1,8 @@
 <html><head></head>
 <body>
 <form action="/signup" method="POST">
-  <p>
-    <label>Обращение</label>
+ <fieldset>
+  <legend>Обращение:</legend>
     <label>
       <input type="radio" name="title" value="mr">
       Г-н
@@ -11,7 +11,17 @@
       <input type="radio" name="title" value="mrs">
       Г-жа
     </label>
-  </p>
+ </fieldset>
+ <p>Выберите что вы человек (что-то вроде проверки на человека):
+  <label>
+      <input type="radio" name="CAPTCHA" value="robot">
+      Робот
+    </label>
+    <label>
+      <input type="radio" name="CAPTCHA" value="human">
+      Человек
+    </label>
+ </p>
   <p>
     <label>Имя</label>
     <input type="text" name="first_name">
@@ -25,6 +35,10 @@
     <input type="email" name="email">
   </p>
   <p>
+  <p>
+    <label>Напишите о себе в свободной форме</label>
+    <input type="textarea" name="otherbyhuman">
+  </p>
     <label>Телефон</label>
     <input type="tel" name="phone">
   </p>
@@ -35,6 +49,14 @@
   <p>
     <label>Подтвердите пароль</label>
     <input type="password" name="password_confirm">
+  </p>
+ <p>
+    <label>ссылка на вашу компанию </label>
+    <input type="link" name="link_company">
+  </p>
+<p>
+    <label>ссылка на вашу компанию </label>
+    <input type="link" name="link_company">
   </p>
   <p>
     <label>Страна</label>
@@ -49,6 +71,37 @@
       <option>США</option>
     </select>
   </p>
+  <p>
+    <label>Ваши любые жанры фильмов</label>
+    <select name="typemovie" multiple>
+      <option>Ужасы</option>
+      <option>Фантастика</option>
+      <option>Комедия</option>
+      <option>Драма</option>
+      <option>Трагедия</option>
+      <option>Семейное кино</option>
+      <option>другое</option>
+    </select>
+  </p>
+ <fieldset>
+  <legend>Ваши любые цвета:</legend>
+<label>
+      <input type="checkbox" name="colors" value="blue">
+Синий   
+ </label>
+<label>
+      <input type="checkbox" name="colors">
+Красный   
+ </label>
+<label>
+      <input type="checkbox" name="colors">
+Черный   
+ </label>
+<label>
+      <input type="checkbox" name="colors">
+Белый   
+ </label>
+ </fieldset>
   <p>
     <label>
       <input type="checkbox" name="terms">
